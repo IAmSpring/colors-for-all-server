@@ -30,7 +30,7 @@ app.use(
 );
 
 mongoose.connect(`mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@ds111565.mlab.com:11565/colors`);
-    
-app.listen(port, function() {
-    console.log('Server running on ' + port);
+
+app.listen(process.env.PORT, function() {
+    console.log('Server running on ' + process.env.PORT);
 });
