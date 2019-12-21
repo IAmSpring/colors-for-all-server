@@ -34,7 +34,7 @@ mongoose
         `mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@ds111565.mlab.com:11565/colors`
     )
     .then(() => {
-        app.listen(443);
+        app.listen(${port});
     })
     .catch(err => {
         console.log(err);
